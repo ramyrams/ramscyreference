@@ -1,0 +1,35 @@
+{
+  "name": "automation",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "postinstall": "run-s ci:client ci:server",
+    "ci:client": "cd client && npm ci",
+    "ci:server": "cd server && npm ci",
+    "build": "cd client && npm run build",
+    "start": "concurrently npm:start:client npm:start:server",
+    "start:coverage": "concurrently npm:start:client npm:start:server:coverage",
+    "start:client": "cd client && npm start",
+    "start:server": "cd server && npm start",
+    "start:server:coverage": "cd server && npm run start:coverage",
+    "cypress:open": "cypress open",
+    "cypress:run": "cypress run",
+    "cypress:test": "cypress run -s 'cypress/integration/**/*-spec.js'",
+    "test": "start-test start 4100 cypress:test",
+    "test:coverage": "start-test start:coverage 4100 cypress:test",
+    "dev": "start-test start 4100 cypress:open",
+    "dev:coverage": "start-test start:coverage 4100 cypress:open",
+    "coveralls": "nyc report --reporter=text-lcov | coveralls",
+    "warn-only": "stop-only --warn --folder cypress/integration",
+    "stop-only": "stop-only --folder cypress/integration"
+  },
+  "author": "Rams",
+  "license": "ISC",
+  "devDependencies": {
+    "@shelex/cypress-allure-plugin": "^1.8.0",
+    "@testing-library/cypress": "^6.0.0",
+    "cypress": "^4.12.1",
+    "cypress-xpath": "^1.6.0"
+  }
+}

@@ -1,0 +1,74 @@
+{
+  "CreateJustForUpdate": "mewly updated",
+  "MyArray": [
+    "Arr1",
+    "Arr2",
+    "Arr3"
+  ],
+  "age": 30,
+  "employee": {
+    "name": "John",
+    "age": 30,
+    "city": "New York"
+  },
+  "arrayOfObjects": [
+    {
+      "id": 28,
+      "Title": "Sweden"
+    },
+    {
+      "id": 56,
+      "Title": "USA"
+    },
+    {
+      "id": 89,
+      "Title": "England"
+    }
+  ],
+  "VeryComplexObject": [
+    {
+      "id": 28,
+      "Title": "Sweden",
+      "ComplexObject": [
+        {
+          "id": 28,
+          "Title": "Sweden"
+        },
+        {
+          "id": 56,
+          "Title": "USA"
+        },
+        {
+          "id": 89,
+          "Title": "England"
+        }
+      ]
+    },
+    {
+      "id": 56,
+      "Title": "USA",
+      "ComplexObject": [
+        {
+          "id": 28,
+          "Title": "Sweden"
+        },
+        {
+          "id": 56,
+          "Title": "USA"
+        },
+        {
+          "id": 89,
+          "Title": "England"
+        }
+      ]
+    }
+  ],
+  "SessionID": "c04xn34sczp31gweg55zqv0a",
+  "Token": "4389D7F91CC2BB04FA43A5CDAE1B52FFF69BF6F3CBEEF8057A27CF0745CC159CE5258588D393C361B7D8828B834A484D339D94213C35D2A732A6EED304845449C1E62070CB47647D38B423564BD375B9F116C493",
+  "CCNCCB": "JJJD",
+  "NewVale": "New value across the function",
+  "Test1Status": "<p><strong> Test1 Health Status: </strong> Build No: #342 - SUCCESS - Allure Report:<a href='http://172.16.2.29:8080/job/Smoke_Test_Test1/342/allure/'>Allure Result for Environment: Test1 </a></p>",
+  "Test2Status": "<p><strong> Test2 Health Status: </strong> Build No: #301 - SUCCESS - Allure Report:<a href='http://172.16.2.29:8080/job/Smoke_Test_Test2/301/allure/'>Allure Result for Environment: Test2 </a></p>",
+  "STGStatus": "<p><strong> STG Health Status: </strong> Build No: #284 - FAILURE - Allure Report:<a href='http://172.16.2.29:8080/job/Smoke_Test_Stage/284/allure/'>Allure Result for Environment: STG </a></p>",
+  "TRNStatus": "<p><strong> TRN Health Status: </strong> Build No: #296 - FAILURE - Allure Report:<a href='http://172.16.2.29:8080/job/Smoke_Test_Training/296/allure/'>Allure Result for Environment: TRN </a></p>"
+}

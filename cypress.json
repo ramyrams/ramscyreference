@@ -1,0 +1,9 @@
+{
+    "video": false,
+    "videoCompression": 32,
+    "videoUploadOnPasses": true,
+    "defaultCommandTimeout": 15000,
+    "allureResultsPath": "/results"
+    
+    
+}
