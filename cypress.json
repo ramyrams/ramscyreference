@@ -4,6 +4,4 @@
     "videoUploadOnPasses": true,
     "defaultCommandTimeout": 15000,
     "allureResultsPath": "/results"
-    
-    
 }
