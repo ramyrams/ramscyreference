@@ -1,7 +1,27 @@
 {
+    
+    "requestTimeout": 200000,
+    "responseTimeout": 200000,
+    "defaultCommandTimeout": 15000,
+    "pageLoadTimeout": 12000,
+    "screenshotsFolder" : "cypress/screenshots", 
+    "videosFolder": "cypress/videos",
     "video": false,
     "videoCompression": 32,
-    "videoUploadOnPasses": true,
-    "defaultCommandTimeout": 15000,
-    "allureResultsPath": "/results"
+    "videoUploadOnPasses": false,
+    "trashAssetsBeforeRuns" : true,
+    "viewportWidth": 1600,
+    "viewportHeight": 1200,
+    "allureResultsPath": "allure/results",
+    "chromeWebSecurity": false,
+    "codeCoverage": {
+        "url": "http://localhost:3000/__coverage__"
+    },
+    "retries": {
+        "runMode": 3,
+        "openMode": 0
+    },
+    "MyConfig": "This is the value of my conrig",
+    "baseUrl": "https://portal.test.com/"
+    
 }

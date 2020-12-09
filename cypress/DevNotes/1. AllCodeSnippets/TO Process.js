@@ -1,3 +1,23 @@
+// test again (100 times) and it works.
+describe("cypress bug", () => {
+ 
+	Cypress._.times(100, (k) => {
+		it(`test ${k} of 100`, () => {
+			// cy.server();
+			// cy.route("get", "/api/posts").as("getPosts");
+			cy.intercept("GET", "/api/posts").as("getPosts");
+
+			cy.visit("http://localhost:3000");
+
+			cy.wait("@getPosts");
+			cy.wait("@getPosts");
+			cy.wait("@getPosts");
+			cy.wait("@getPosts");
+		});
+	})
+});
+
+
 cy.wrap('foo').should('be.a', 'string')
 
 cy.wrap('foobar').should('have.string', 'bar')

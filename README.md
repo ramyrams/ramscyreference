@@ -126,6 +126,8 @@ cypress run --spec 'cypress/integration/examples/actions.spec.js,cypress/integra
 -----------------------------------------------------------------------------------------------------
 npx cypress run --config video=false --env allure=true --browser chrome --spec "cypress/integration/SmokeTesting/VerifyEddgApplication.js"
 
+npx cypress run --config-file cypress.stg.json video=true --env allure=true --browser chrome --spec cypress/integration/SmokeTesting/VerifyEddgApplication.js
+
 parallel execution
 	cypress run --record --group 1x-electron
 	cypress run --record --group 2x-chrome --parallel --browser chrome
