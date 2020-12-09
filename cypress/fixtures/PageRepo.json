@@ -1,0 +1,33 @@
+{
+    "landing":{
+        "elements":{
+            "txt_Username": "#UserName",
+            "txt_Password": "#Password",
+            "btn_LogOn": "Log On"
+        },
+        "txt":{
+            "page_Title": "My Page Title"
+        }
+    },
+
+    "home":{
+        "elements":{
+            "link_PMCApp": ".network-app-drawer",
+            "link_ClientApp": ".client-app-drawer"
+        },
+        "txt":{
+            "PMCPageTitle": "Individual Search",
+            "ClientPageTitle": "Client Issue Manager"
+        }
+    },
+
+    "SearchIndividuals":{
+        "elements":{
+            "txt_LastName": "#LastName",
+            "txt_FirstName": "#FirstName",
+            "btn_Search": "#btnDemographicSearch",
+            "grd_row1_Col1": "#GridIndDemoSearch > table > tbody > tr > td:nth-child(1)>a"
+        }
+    }
+    
+}
